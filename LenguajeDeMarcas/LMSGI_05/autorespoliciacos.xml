@@ -1,0 +1,66 @@
+<autorespoliciacos>
+  <autor id="ap01" sexo="H" info="https://es.wikipedia.org/wiki/Mikel_Santiago">
+    <nombre>Mikel</nombre>
+    <apellido>Santiago</apellido>
+    <nacimiento>1975</nacimiento>
+    <pais>España</pais>
+    <obra_destacada>El mentiroso</obra_destacada>
+    <premios>Premio Euskadi de Literatura</premios>
+  </autor>
+  <autor id="ap02" sexo="H" info="https://es.wikipedia.org/wiki/Don_Winslow">
+    <nombre>Don</nombre>
+    <apellido>Winslow</apellido>
+    <nacimiento>1953</nacimiento>
+    <pais>Estados Unidos</pais>
+    <obra_destacada>El poder del perro</obra_destacada>
+    <premios>Raymond Chandler Award</premios>
+  </autor>
+  <autor id="ap03" sexo="H" info="https://es.wikipedia.org/wiki/Ibon_Mart%C3%ADn">
+    <nombre>Ibon</nombre>
+    <apellido>Martín</apellido>
+    <nacimiento>1976</nacimiento>
+    <pais>España</pais>
+    <obra_destacada>El faro del silencio</obra_destacada>
+    <premios>Premio Euskadi de Plata</premios>
+  </autor>
+  <autor id="ap04" sexo="M" info="https://es.wikipedia.org/wiki/Eva_Garc%C3%ADa_S%C3%A1enz_de_Urturi">
+    <nombre>Eva</nombre>
+    <apellido>García Sáenz de Urturi</apellido>
+    <nacimiento>1972</nacimiento>
+    <pais>España</pais>
+    <obra_destacada>El silencio de la ciudad blanca</obra_destacada>
+    <premios>Premio Planeta</premios>
+  </autor>
+  <autor id="ap05" sexo="H" info="https://es.wikipedia.org/wiki/Jo_Nesb%C3%B8">
+    <nombre>Jo</nombre>
+    <apellido>Nesbø</apellido>
+    <nacimiento>1960</nacimiento>
+    <pais>Noruega</pais>
+    <obra_destacada>El muñeco de nieve</obra_destacada>
+    <premios>Premio Riverton</premios>
+  </autor>
+  <autor id="ap06" sexo="H" info="https://es.wikipedia.org/wiki/Javier_Castillo_(escritor)">
+    <nombre>Javier</nombre>
+    <apellido>Castillo</apellido>
+    <nacimiento>1987</nacimiento>
+    <pais>España</pais>
+    <obra_destacada>El día que se perdió la cordura</obra_destacada>
+    <premios>Premio del Público de Amazon</premios>
+  </autor>
+  <autor id="ap07" sexo="H" info="https://es.wikipedia.org/wiki/Daniel_Cole_(escritor)">
+    <nombre>Daniel</nombre>
+    <apellido>Cole</apellido>
+    <nacimiento>1983</nacimiento>
+    <pais>Reino Unido</pais>
+    <obra_destacada>Ragdoll</obra_destacada>
+    <premios>Best New Crime Author</premios>
+  </autor>
+  <autor id="ap08" sexo="M" info="https://es.wikipedia.org/wiki/Dolores_Redondo">
+  <nombre>Dolores</nombre>
+  <apellido>Redondo</apellido>
+  <nacimiento>1969</nacimiento>
+  <pais>España</pais>
+  <obra_destacada>El guardián invisible</obra_destacada>
+  <premios>Premio Planeta, Premio de Novela Negra de la Semana Negra de Gijón</premios>
+</autor>
+</autorespoliciacos>

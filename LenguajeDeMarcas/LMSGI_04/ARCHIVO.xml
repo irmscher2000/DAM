@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Eugen Moga
+    LMSGI04_Tarea
+-->
+<!DOCTYPE parque SYSTEM "parque.dtd">
+
+<parque>
+    <materiales>
+        <material tipo="extincion">
+            <nombre>Manguera</nombre>
+            <tipo>extincion</tipo>
+            <unidades>50</unidades>
+        </material>
+        <material tipo="otras_actuaciones">
+            <nombre>Extintor</nombre>
+            <tipo>otras_actuaciones</tipo>
+            <unidades>50</unidades>
+        </material>
+    </materiales>
+    <camiones>
+        <camion capacidadExtintor="agua">
+            <matricula>123 BCD</matricula>
+            <longitudVehiculo>13</longitudVehiculo>
+            <longitudEscalera>20</longitudEscalera>
+            <capacidadExtintor>200</capacidadExtintor>
+        </camion>
+    </camiones>
+    <bomberos>
+        <bombero rango="srgt">
+            <dni>12345678A</dni>
+            <rango>srgt</rango>
+            <nombreApellidos>Eugen Moga</nombreApellidos>
+            <direccion>
+                <calle>Calle Mallor </calle>
+                <cp>31530</cp>
+                <provincia>Navarra</provincia>
+            </direccion>
+            <edad>34</edad>
+            <telefonos>
+                <telefono>601234567</telefono>
+                <telefono>948234567</telefono>
+                <telefono>948034567</telefono>
+            </telefonos>
+        </bombero>
+    </bomberos>
+</parque>
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Eugen Moga
+    LMSGI04_Tarea
+    Este archivo es para validar el documento xml contra el xsd y asi 
+    cumplir el apartado D que dice:
+    d. Modificar ese fichero XML para asociar el esquema diseñado. (.xml)
+-->
+
+<parque xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="archivo.xsd">
+    <materiales>
+        <material nombre="Manguera" tipo="extincion" unidades="50" />        
+        <material nombre="Extintor" tipo="otras_actuaciones" unidades="25" />
+    </materiales>
+    <camiones>
+        <camion capacidadExtintor="agua">
+            <matricula>1234 BCD</matricula>
+            <longitudVehiculo>13</longitudVehiculo>
+            <longitudEscalera>20</longitudEscalera>
+            <capacidadExtintor>200</capacidadExtintor>
+        </camion>
+    </camiones>
+    <bomberos>
+        <bombero rango="srgt">
+            <dni>12345678A</dni>
+            <!--<rango>srgt</rango>-->
+            <nombreApellidos>Eugen Moga</nombreApellidos>
+            <direccion>
+                <calle>Calle Mallor </calle>
+                <cp>31530</cp>
+                <provincia>Navarra</provincia>
+            </direccion>
+            <edad>34</edad>
+            <telefonos>
+                <telefono>601234567</telefono>
+                <telefono>948234567</telefono>
+                <telefono>948034567</telefono>
+            </telefonos>
+        </bombero>
+    </bomberos>
+</parque>
+
+
+
+
+

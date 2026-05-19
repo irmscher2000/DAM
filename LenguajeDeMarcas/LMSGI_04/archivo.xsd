@@ -1,0 +1,127 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<!--
+    Eugen Moga
+    LMSGI04_Tarea
+-->
+    <xs:element name="parque">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Materiales del parque -->
+                <xs:element name="materiales">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="material" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="nombre" type="xs:string" use="required" />
+                                    <xs:attribute name="tipo" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="extincion" />
+                                                <xs:enumeration value="ayuda_accidentes" />
+                                                <xs:enumeration value="otras_actuaciones" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="unidades" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:integer">
+                                                <xs:minInclusive value="1" />
+                                                <xs:maxInclusive value="100" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <!-- Camiones del parque -->
+                <xs:element name="camiones">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="camion" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="matricula">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Z]-\d{4}-[A-Z]{1,2}" />       <!-- Formato antiguo: M-1234-AB -->
+                                                    <xs:pattern value="\d{4} [A-Z]{3}" />               <!-- Formato nuevo: 1234 BCD -->
+                                                    <xs:pattern value="[A-Z]\d-\d{4}-[A-Z]" />          <!-- Formato nuevo: L0-7778-G -->
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="longitudVehiculo" type="xs:decimal" />
+                                        <xs:element name="longitudEscalera" type="xs:decimal" />
+                                        <xs:element name="capacidadExtintor" type="xs:integer" />
+                                    </xs:sequence>
+                                    <xs:attribute name="capacidadExtintor" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="agua" />
+                                                <xs:enumeration value="espuma" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <!-- Bomberos del parque -->
+                <xs:element name="bomberos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="bombero" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dni">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Z]\d{8}" />       <!-- Letra al principio -->
+                                                    <xs:pattern value="\d{8}[A-Z]" />       <!-- Letra al final -->
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>                 
+                                        <xs:element name="nombreApellidos" type="xs:string" />
+                                        <xs:element name="direccion">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="calle" type="xs:string" />
+                                                    <xs:element name="cp" type="xs:string" />
+                                                    <xs:element name="provincia" type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="edad" type="xs:integer" />
+                                        <xs:element name="telefonos" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="telefono" type="xs:string" maxOccurs="unbounded" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="rango" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="srgt" />
+                                                <xs:enumeration value="cabo" />
+                                                <xs:enumeration value="bomb" />
+                                                <xs:enumeration value="bombc" />
+                                                <xs:enumeration value="cond" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="ubicacion" type="xs:string" use="optional" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

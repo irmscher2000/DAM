@@ -1,0 +1,35 @@
+<!ELEMENT parque (materiales, camiones, bomberos)>
+
+<!ELEMENT materiales (material+)>
+<!ELEMENT material (nombre, tipo, unidades)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT unidades (#PCDATA)>
+
+<!ELEMENT camiones (camion+)>
+<!ELEMENT camion (matricula, longitudVehiculo, longitudEscalera, capacidadExtintor)>
+<!ELEMENT matricula (#PCDATA)>
+<!ELEMENT longitudVehiculo (#PCDATA)>
+<!ELEMENT longitudEscalera (#PCDATA)>
+<!ELEMENT capacidadExtintor (#PCDATA)>      
+
+<!ELEMENT bomberos (bombero+)>
+<!ELEMENT bombero (dni, rango, nombreApellidos, direccion, edad, telefonos?)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT rango (#PCDATA)>
+<!ELEMENT nombreApellidos (#PCDATA)>
+<!ELEMENT direccion (calle, cp, provincia)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT telefonos (telefono+)>
+<!ELEMENT telefono (#PCDATA)>
+
+<!ATTLIST material tipo (extincion | ayuda_accidentes | otras_actuaciones) #REQUIRED>
+<!ATTLIST camion capacidadExtintor (agua | espuma) #REQUIRED>
+<!ATTLIST bombero rango  (srgt | cabo | bomb| bombc | cond) #REQUIRED>
+<!ATTLIST parque ubicacion CDATA #IMPLIED>
+<!ATTLIST parque
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED>

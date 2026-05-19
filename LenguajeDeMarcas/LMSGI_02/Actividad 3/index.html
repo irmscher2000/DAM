@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="es"> <!-- Define el idioma  -->
+    <head>
+        <meta charset="UTF-8">                                                  <!-- Declara el documento en UTF-8 soporta tildes y ñ -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- El ancho de la pagina se adapta a dispositivos moviles -->
+        <title>Formulario de Reserva</title>                                    <!-- Titulo de la pestaña del navegador -->
+    </head>
+    
+    <body>
+        <h1>Reserva de Hotel</h1>
+        <form action="#" method="get">                                          <!-- Se inicia el formulario -->
+            <div>                                                               <!-- Div agrupa las lineas por contenedores  -->
+            <b>Nombre:</b> <input type="text" name="Nombre"></input>            <!-- <b> en negrita <imput> crea un cuadro donde el usuario puede ingresar información -->
+            &nbsp;&nbsp;&nbsp;<b>Apellidos:</b> <input type="text" name="Apellidos"></input>        <!-- &nbsp;&nbsp;&nbsp; agrega espacio para que salga en la misma linea que el campo nombre -->
+            </div>
+            <br>    <!-- Salto de linea -->
+            <div>
+            <b>Telefono:</b> <input type="number" name="Telefono"></input>
+            &nbsp;&nbsp;&nbsp;<b>E-mail:</b> <input type="text" name="E-mail"></input>
+            </div>
+            <br>    <!-- Salto de linea -->
+            <div>
+            <b>¿Cuantas noches quieres reservar?:</b> <input type="number" name="Noches"></input>
+            </div>
+            
+            <br/><b>Fecha de entrada:</b>                                       <!-- <br/> agrega dos saltos de linea -->
+            <select>                                                            <!-- Select crea un menu desplegable con las opciones en este caso hace referencia a los dias -->
+                <option>dia</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+            </select>
+            <select>                                                            <!-- Select crea un menu desplegable con las opciones en este caso hace referencia a los meses -->
+                <option>mes</option>
+                <option>Enero</option>
+                <option>Febrero</option>
+                <option>Marzo</option>
+                <option>Abril</option>
+                <option>Mayo</option>
+                <option>Junio</option>
+                <option>Julio</option>
+                <option>Agosto</option>
+                <option>Septiembre</option>
+                <option>Octubre</option>
+                <option>Noviembre</option>
+                <option>Diciembre</option>
+            </select>
+            <br/>
+            
+            <br/><b>Tipo de habitación:</b> <input type="radio" name="Habitacion"/>Simple   <!<!-- Boton radio para elegir diferentes tipos de habitación -->
+            <input type="radio" name="Habitacion"/>Doble
+            <input type="radio" name="Habitacion"/>Matrimonio
+            <br/>
+            
+            <br/><b>Indica que deseas incluir en tu estancia: </b> 
+            <input type="checkbox" name="Comidas"/> Desayuno                    <!-- Campo de selección multiple checkbox -->
+            <input type="checkbox" name="Comidas"/> Comida
+            <input type="checkbox" name="Comidas"/> Cena
+            <br/>
+            
+            <br/>
+            <b>Reclamaciones o comentarios:</b>
+            <br/>
+            <textarea rows="3" cols="80"></textarea>                            <!-- textarea crea un area de texto donde el usuario puede escribir multipleslineas de texto -->
+            <br/><br/>                                                          <!-- rows hace referencia al numero de lineas mientras que cols al numero de caracteres permitidos -->
+            
+            <button type="submit">Enviar</button>                               <!-- Se configura el boton de enviar el formulario -->
+            <button type="reset">Limpiar</button>                               <!<!-- Se configura el boton de limpiar el formulario -->
+        </form>        
+        <p><b>Pulsa el botón de "Enviar" para formalizar la reserva o el boton de "Limpiar" para limpiar el formulario.</b></p>
+        
+    </body>
+</html>

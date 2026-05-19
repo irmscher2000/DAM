@@ -1,0 +1,83 @@
+/*
+Eugen Moga
+LMSGI02 Tarea
+*/
+
+/* Estilos generales para la página */
+body {
+    font-family: Arial, sans-serif; /* Define la fuente para todo el texto */
+    margin: 0; /* Elimina el margen predeterminado del navegador */
+    padding: 0; /* Elimina el relleno predeterminado */
+    background-color: #FFFFFF; /* Define un color de fondo blanco */
+    color: #181A1D; /* Color de texto en gris oscuro */
+    
+/* Encabezado */
+header {
+    background-color: #1F2124; /* Fondo oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espaciado interno */
+}
+
+header h1 {
+    margin: 0; /* Elimina los márgenes superiores e inferiores */
+    font-size: 2.5em; /* Define el tamaño del texto */
+}
+    
+/* Sección principal */
+main {
+    padding: 25px; /* Espaciado interno para todo el contenido principal */
+    max-width: 900px; /* Ancho máximo del contenido */
+    margin: auto; /* Centra horizontalmente el contenido */
+}
+
+/* Sección sobre mi? */
+#sobremi {
+    text-align: center; /* Centra el texto de la sección */
+    margin-bottom: 25px; /* Añade espacio debajo de la sección */
+}
+
+/* Estilo de la foto */
+.foto {
+    width: 500px; /* Ancho fijo de la imagen */
+    height: auto; /* Ajusta la altura proporcionalmente */
+    border-radius: 10%; /* Hace que la imagen tengo los bordes redondeados */
+    margin-top: 10px; /* Añade un espacio superior */
+}
+
+/* Tabla de estudios */
+table {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    border-collapse: collapse; /* Elimina los espacios entre bordes */
+    margin-top: 25px; /* Añade espacio superior */
+}
+
+thead {
+    background-color: #1F2124; /* Fondo oscuro para el encabezado */
+    color: #FFFFFF; /* Texto blanco en el encabezado */
+}
+
+th, td {
+    padding: 10px; /* Espaciado interno en celdas */
+    border: 1px solid #1F2124; /* Bordes  oscuro */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Enlace externo */
+aside {
+    background-color: #EEEEEE; /* Fondo gris claro */
+    padding: 5px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    margin: 25px auto; /* Añade espacio vertical y centra horizontalmente */
+    max-width: 400px; /* Ancho máximo */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Pie de página */
+footer {
+    background-color: #1F2124; /* Fondo oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 10px; /* Espaciado interno */
+    font-size: 0.9em; /* Tamaño de texto más pequeño */
+}
