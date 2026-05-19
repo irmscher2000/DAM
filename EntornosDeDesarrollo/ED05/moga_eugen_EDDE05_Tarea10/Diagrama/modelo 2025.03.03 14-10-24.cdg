@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="modelo">
+  <ClassDiagramComponents>
+    <Class name="Equipo" package="" visibility="public" xPosition="92.0" yPosition="10.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="pais" type="String" visibility="private"/>
+        <Field name="tecnicos" type="List&lt;Tecnico&gt;" visibility="private"/>
+        <Field name="jugadores" type="List&lt;Jugador&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="pais"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getPais" returnType="String" visibility="public"/>
+        <Method name="setPais" returnType="void" visibility="public">
+          <Argument type="String" name="pais"/>
+        </Method>
+        <Method name="agregarTecnico" returnType="void" visibility="public"/>
+        <Method name="agregarJugador" returnType="void" visibility="public"/>
+        <Method name="mostrarInformacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="" visibility="public" isAbstract="true" xPosition="606.0" yPosition="12.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellidos" type="String" visibility="private"/>
+        <Field name="edad" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+          <Argument type="int" name="edad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellidos" returnType="String" visibility="public"/>
+        <Method name="setApellidos" returnType="void" visibility="public">
+          <Argument type="String" name="apellidos"/>
+        </Method>
+        <Method name="getEdad" returnType="int" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="int" name="edad"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Tecnico" package="" visibility="public" xPosition="32.0" yPosition="376.0">
+      <Fields>
+        <Field name="aniosExperiencia" type="int" visibility="private"/>
+        <Field name="esNacional" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="aniosExperiencia"/>
+          <Argument type="boolean" name="esNacional"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAniosExperiencia" returnType="int" visibility="public"/>
+        <Method name="setAniosExperiencia" returnType="void" visibility="public">
+          <Argument type="int" name="aniosExperiencia"/>
+        </Method>
+        <Method name="getEsNacional" returnType="boolean" visibility="public"/>
+        <Method name="setEsNacional" returnType="void" visibility="public">
+          <Argument type="boolean" name="esNacional"/>
+        </Method>
+        <Method name="mostrarInformacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Jugador" package="" visibility="public" isAbstract="true" xPosition="606.0" yPosition="371.0">
+      <Fields>
+        <Field name="numeroDorsal" type="int" visibility="private"/>
+        <Field name="esTitular" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="numeroDorsal"/>
+          <Argument type="boolean" name="esTitular"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNumeroDorsal" returnType="int" visibility="public"/>
+        <Method name="setNumeroDorsal" returnType="void" visibility="public">
+          <Argument type="int" name="numeroDorsal"/>
+        </Method>
+        <Method name="getEsTitular" returnType="boolean" visibility="public"/>
+        <Method name="setEsTitular" returnType="void" visibility="public">
+          <Argument type="boolean" name="esTitular"/>
+        </Method>
+        <Method name="mostrarInformacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Portero" package="" visibility="public" xPosition="22.0" yPosition="649.0">
+      <Fields>
+        <Field name="golesRecibidos" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="numeroDorsal"/>
+          <Argument type="boolean" name="esTitular"/>
+          <Argument type="int" name="golesRecibidos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getGolesRecibidos" returnType="int" visibility="public"/>
+        <Method name="setGolesRecibidos" returnType="void" visibility="public">
+          <Argument type="int" name="golesRecibidos"/>
+        </Method>
+        <Method name="mostrarInformacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="JugadorCampo" package="" visibility="public" isAbstract="true" xPosition="606.0" yPosition="649.0">
+      <Fields>
+        <Field name="asistencias" type="int" visibility="private"/>
+        <Field name="golesAnotados" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="apellidos"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="numeroDorsal"/>
+          <Argument type="boolean" name="esTitular"/>
+          <Argument type="int" name="asistencias"/>
+          <Argument type="int" name="golesAnotados"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAsistencias" returnType="int" visibility="public"/>
+        <Method name="setAsistencias" returnType="void" visibility="public">
+          <Argument type="int" name="asistencias"/>
+        </Method>
+        <Method name="getGolesAnotados" returnType="int" visibility="public"/>
+        <Method name="setGolesAnotados" returnType="void" visibility="public">
+          <Argument type="int" name="golesAnotados"/>
+        </Method>
+        <Method name="mostrarInformacion" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Defensa" package="" visibility="public" xPosition="1067.0" yPosition="456.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Centrocampista" package="" visibility="public" xPosition="1067.0" yPosition="591.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Delantero" package="" visibility="public" xPosition="1067.0" yPosition="717.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="tiene" source="Equipo" target="Tecnico" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+    <IsRelation name="is" source="Centrocampista" target="JugadorCampo"/>
+    <IsRelation name="is" source="JugadorCampo" target="Jugador"/>
+    <IsRelation name="is" source="Delantero" target="JugadorCampo"/>
+    <HasRelation name="tiene" source="Equipo" target="Jugador" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+    <IsRelation name="is" source="Defensa" target="JugadorCampo"/>
+    <IsRelation name="is" source="Tecnico" target="Persona"/>
+    <IsRelation name="is" source="Portero" target="Jugador"/>
+    <IsRelation name="is" source="Jugador" target="Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
