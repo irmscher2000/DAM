@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:padding="50dp"
+    android:background="#F2F2F2">
+
+
+    <TextView
+        android:id="@+id/textConectar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conectar"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#090909"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="48dp" />
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        android:textSize="16sp"
+        android:textColor="#090909"
+        android:backgroundTint="#9E9E9E"
+        android:layout_marginBottom="32dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:textColor="#090909"
+        android:backgroundTint="#9E9E9E"
+        android:layout_marginBottom="40dp" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#DADADA"
+        android:enabled="true"
+        android:text="INICIAR SESION"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp" />
+
+    <TextView
+        android:id="@+id/textOlvidasteContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="#1976D2"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+</LinearLayout>
