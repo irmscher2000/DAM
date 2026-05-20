@@ -1,0 +1,183 @@
+﻿<Page x:Class="Estilos_de_Eugen_Moga.ContactoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Estilos_de_Eugen_Moga"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ContactoPage">
+
+    <StackPanel>
+
+        <Border Background="#F1EEEA" Padding="30,30">
+            <StackPanel HorizontalAlignment="Center">
+
+                <TextBlock Text="Contáctanos"
+                   Style="{StaticResource H1Text}"
+                   HorizontalAlignment="Center"/>
+
+                <TextBlock Text="¿Listo para impulsar tu carrera en el desarrollo de aplicaciones?"
+                   Style="{StaticResource SubtitleText}"
+                   HorizontalAlignment="Center"
+                   MaxWidth="700"
+                   Margin="0,15,0,0"/>
+
+                <TextBlock Text="¡Tu futuro como desarrollador comienza aquí!"
+                           Style="{StaticResource SubtitleText}"
+                           HorizontalAlignment="Center"
+                           MaxWidth="700"
+                           Margin="0,10,0,0"/>
+
+            </StackPanel>
+        </Border>
+        
+        <!-- Contenido principal Info + Formulario -->
+        <Border Background="White" Padding="60,40">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="1.5*"/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- Columan Izquierda Informacion de contacto -->
+                <StackPanel Grid.Column="0"
+                            VerticalAlignment="Top"
+                            Margin="0,0,40,0">
+
+                    <TextBlock Text="Información de Contacto"
+                               Style="{StaticResource H2Text}"
+                               Margin="0,0,0,20"/>
+
+                    <TextBlock Text="Utiliza el formulario para enviarnos cualquier consulta sobre nuestros cursos DAM, el proceso de inscripción o salidas profesionales. Nuestro equipo de orientación te responderá lo antes posible con toda la información que necesitas."
+                               Style="{StaticResource BodyText}"
+                               Margin="0,0,0,15"/>
+
+                    <TextBlock Text="También puedes contactar con nosotros en cualquiera de estos medios."
+                               Style="{StaticResource BodyText}"
+                               Margin="0,0,0,30"/>
+                    
+                    <!-- Email -->
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,25">
+                        <Image Source="/Images/mail.png"
+                               Width="50"
+                               Height="50"
+                               VerticalAlignment="Top"
+                               Margin="0,0,15,0"/>
+
+                        <StackPanel>
+                            <TextBlock Text="Email"
+                                       Style="{StaticResource H2Text}"
+                                       Margin="0,0,0,5"/>
+                            <TextBlock Text="emoga@educacion.navarra.es"
+                                       Style="{StaticResource BodyText}"/>
+                            <TextBlock Text="Respuesta en menos de 24 horas"
+                                        Style="{StaticResource BodyText}"/>
+
+                        </StackPanel>
+                        
+                    </StackPanel>
+
+                    <!-- Telefono -->
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,25">
+                        <Image Source="/Images/telefono.png"
+                               Width="50"
+                               Height="50"
+                               VerticalAlignment="Top"
+                               Margin="0,0,15,0"/>
+
+                        <StackPanel>
+                            <TextBlock Text="Teléfono"
+                                        Style="{StaticResource H2Text}"
+                                        Margin="0,0,0,5"/>
+                            <TextBlock Text="948220412"
+                                        Style="{StaticResource BodyText}"/>
+                            <TextBlock Text="Lun - Vie, 9:00 - 18:00"
+                                        Style="{StaticResource BodyText}"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+                    <!-- Oficina -->
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,25">
+                        <Image Source="/Images/ubicacion.png"
+                               Width="50"
+                               Height="50"
+                               VerticalAlignment="Top"
+                               Margin="0,0,15,0"/>
+
+                        <StackPanel>
+                            <TextBlock Text="Oficina"
+                                        Style="{StaticResource H2Text}"
+                                        Margin="0,0,0,5"/>
+                            <TextBlock Text="C/ San Pol 8"
+                                        Style="{StaticResource BodyText}"/>
+                            <TextBlock Text="31200 Estella Navarra"
+                                        Style="{StaticResource BodyText}"/>
+
+                        </StackPanel>
+                    </StackPanel>
+
+
+                </StackPanel>
+                
+                <!-- Columna derecha formulario -->
+                <Border Grid.Column="1"
+                        BorderBrush="{StaticResource TextSecondaryBrush}"
+                        BorderThickness="1"
+                        CornerRadius="12"
+                        Padding="35">
+
+                    <StackPanel>
+                        <TextBlock Text="Envíanos un Mensaje"
+                                   Style="{StaticResource H2Text}"
+                                   Margin="0,0,0,25"/>
+
+                        <!-- Nombre -->
+                        <TextBlock Text="Nombre *"
+                                   Style="{StaticResource BodyText}"
+                                   Margin="0,0,0,8"/>
+                        <TextBox x:Name="TxtNombre"
+                                 Text="Tu nombre completo"
+                                 Margin="0,0,0,20"/>
+
+                        <!-- Email -->
+                        <TextBlock Text="Email *"
+                                   Style="{StaticResource BodyText}"
+                                   Margin="0,0,0,8"/>
+                        <TextBox x:Name="TxtEmail"
+                                 Text="ejemplo@email.com"
+                                 Margin="0,0,0,20"/>
+
+                        <!-- Mensaje -->
+                        <TextBlock Text="Mensaje *"
+                                    Style="{StaticResource BodyText}"
+                                    Margin="0,0,0,8"/>
+                        <TextBox x:Name="TxtMensaje"
+                                 Text="Pon aqui tu mensaje"
+                                 Height="140"
+                                 TextWrapping="Wrap"
+                                 AcceptsReturn="True"
+                                 VerticalContentAlignment="Top"
+                                 Margin="0,0,0,25"/>
+                        
+                        <!-- Boton Enviar -->
+                        <Button Content="Enviar Mensaje"
+                                Style="{StaticResource PrimaryButton}"
+                                HorizontalAlignment="Stretch"/>
+
+                        <TextBlock Text="* Campos obligatorios"
+                                   Style="{StaticResource BodyText}"
+                                   HorizontalAlignment="Center"
+                                   Margin="0,10,0,0"/>
+
+                    </StackPanel>
+                    
+                </Border>
+                
+            </Grid>
+            
+        </Border>
+
+    </StackPanel>
+</Page>

@@ -1,0 +1,247 @@
+﻿<Page x:Class="Estilos_de_Eugen_Moga.ServiciosPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Estilos_de_Eugen_Moga"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ServiciosPage">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            
+            <Border Background="#F1EEEA" Padding="30,30">
+                <StackPanel HorizontalAlignment="Center">
+                    
+                    <TextBlock Text="Nuestros Servicios"
+                               Style="{StaticResource H1Text}"
+                               HorizontalAlignment="Center"/>
+
+                    <TextBlock Text="Ofrecemos todos los módulos para que aprendas desarrollo de software para impulsar tu transformación digital y llevar tu carrera al siguiente nivel."
+                               Style="{StaticResource SubtitleText}"
+                               HorizontalAlignment="Center"
+                               MaxWidth="1000"
+                               Margin="0,15,0,0"/>
+
+                </StackPanel>    
+            </Border>
+
+            <Border Background="White" Padding="60,40">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <!-- Tarjeta 1 -->
+                    <Border Grid.Column="0" Grid.Row="0"
+                            Margin="10"
+                            Padding="30"
+                            BorderBrush="{StaticResource TextSecondaryBrush}"
+                            BorderThickness="1"
+                            CornerRadius="12">
+
+                        <StackPanel>
+                            <Image Source="/Images/interfaces.png"
+                                   Width="50" Height="50"
+                                   HorizontalAlignment="Left"
+                                   Margin="0,0,0,15"/>
+
+                            <TextBlock Text="Desarrollo Interfaces"
+                                       Style="{StaticResource H2Text}"
+                                       Margin="0,0,0,10"/>
+
+                            <TextBlock Text="Aprenderás a diseñar, construir y programar la parte visual y funcional de una aplicación, asegurando la interacción y usabilidad para el usuario."
+                                       Style="{StaticResource BodyText}"
+                                       TextWrapping="Wrap"
+                                       Margin="0,0,0,10"/>
+
+                            <!-- Items -->
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_naranja.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Diseño y maquetación responsive (UI/UX)"
+                                           Style="{StaticResource SubtitleText}"
+                                           VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_naranja.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Programación de componentes interactivos"
+                                            Style="{StaticResource SubtitleText}"
+                                            VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_naranja.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Optimizar activos visuales y rendimiento"
+                                            Style="{StaticResource SubtitleText}"
+                                            VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Tarjeta 2 -->
+                    <Border Grid.Column="1" Grid.Row="0"
+                            Margin="10"
+                            Padding="30"
+                            BorderBrush="{StaticResource TextSecondaryBrush}"
+                            BorderThickness="1"
+                            CornerRadius="12">
+
+                        <StackPanel>
+                            <Image Source="/Images/web.png"
+                                   Width="50" Height="50"
+                                   HorizontalAlignment="Left"
+                                   Margin="0,0,0,15"/>
+
+                            <TextBlock Text="Desarrollo Web"
+                                       Style="{StaticResource H2Text}"
+                                       Margin="0,0,0,10"/>
+
+                            <TextBlock Text="Aprenderás a crear sitios web y aplicaciones web modernas, escalables y de alto rendimiento utilizando las últimas tecnologías como React, Next.js, Vue y Angular."
+                                       Style="{StaticResource BodyText}"
+                                       TextWrapping="Wrap"
+                                       Margin="0,0,0,10"/>
+
+                            <!-- Items -->
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_gris.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Sitios web corporativos responsive"
+                                            Style="{StaticResource SubtitleText}"
+                                            VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_gris.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Aplicaciones web progresivas "
+                                            Style="{StaticResource SubtitleText}"
+                                            VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_gris.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Plataformas SaaS personalizadas"
+                                            Style="{StaticResource SubtitleText}"
+                                            VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_gris.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Optimización SEO y rendimiento"
+                                            Style="{StaticResource SubtitleText}"
+                                            VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Tarjeta 3 -->
+                    <Border Grid.Column="0" Grid.Row="1"
+                            Margin="10"
+                            Padding="30"
+                            BorderBrush="{StaticResource TextSecondaryBrush}"
+                            BorderThickness="1"
+                            CornerRadius="12">
+
+                        <StackPanel>
+                            <Image Source="/Images/java.png"
+                                   Width="50" Height="50"
+                                   HorizontalAlignment="Left"
+                                   Margin="0,0,0,15"/>
+
+                            <TextBlock Text="Programación Java"
+                                       Style="{StaticResource H2Text}"
+                                       Margin="0,0,0,10"/>
+
+                            <TextBlock Text="Aprenderás a diseñar la lógica y escribir el código necesario para construir las funcionalidades internas que hacen que las aplicaciones funcionen en diferentes sistemas operativos."
+                                       Style="{StaticResource BodyText}"
+                                       TextWrapping="Wrap"
+                                       Margin="0,0,0,10"/>
+
+                            <!-- Items -->
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_gris.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Programación Orientada a Objetos POO Java"
+                                            Style="{StaticResource SubtitleText}"
+                                            VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_gris.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Desarrollo de Lógica y Algoritmos Back-end"
+                                            Style="{StaticResource SubtitleText}"
+                                            VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_gris.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Conexión y Gestión de Bases de Datos"
+                                           Style="{StaticResource SubtitleText}"
+                                           VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_gris.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Desarrollo de Apps de Escritorio y Servicios"
+                                            Style="{StaticResource SubtitleText}"
+                                            VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Tarjeta 4 -->
+                    <Border Grid.Column="1" Grid.Row="1"
+                            Margin="10"
+                            Padding="30"
+                            BorderBrush="{StaticResource TextSecondaryBrush}"
+                            BorderThickness="1"
+                            CornerRadius="12">
+
+                        <StackPanel>
+                            <Image Source="/Images/sql.png"
+                                   Width="50" Height="50"
+                                   HorizontalAlignment="Left"
+                                   Margin="0,0,0,15"/>
+
+                            <TextBlock Text="Bases de Datos"
+                                       Style="{StaticResource H2Text}"
+                                       Margin="0,0,0,10"/>
+
+                            <TextBlock Text="Aprenderás a diseñar, implementar y gestionar sistemas de almacenamiento estructurado de información mediante lenguajes de consulta (SQL), garantizando la integridad y el acceso eficiente a los datos."
+                                       Style="{StaticResource BodyText}"
+                                       TextWrapping="Wrap"
+                                       Margin="0,0,0,10"/>
+
+                            <!-- Items -->
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_naranja.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Lenguaje de Consulta Estructurado SQL"
+                                            Style="{StaticResource SubtitleText}"
+                                            VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_naranja.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Normalización Bases de Datos: 1NF, 2NF, 3NF"
+                                            Style="{StaticResource SubtitleText}"
+                                            VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_naranja.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Administrar Servidores de Base de Datos"
+                                            Style="{StaticResource SubtitleText}"
+                                            VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                                <Image Source="/Images/check_naranja.png" Width="24" Height="24" Margin="0,0,10,0"/>
+                                <TextBlock Text="Modelado Entidad-Relación"
+                                            Style="{StaticResource SubtitleText}"
+                                            VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+
+
+                </Grid>
+            </Border>
+            
+        </StackPanel>
+        
+    </ScrollViewer>
+</Page>

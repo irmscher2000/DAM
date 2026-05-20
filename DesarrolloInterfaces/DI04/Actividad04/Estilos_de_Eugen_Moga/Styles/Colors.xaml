@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Colores base -->
+    <Color x:Key="Marron_Oscuro">#4C3529</Color>
+    <Color x:Key="Naranja_Cobre">#D48642</Color>
+    <Color x:Key="Verde_Azulado">#8FADA5</Color>
+    <Color x:Key="Marron_Naranja">#9E5429</Color>
+    <Color x:Key="Gris_Azulado">#83949D</Color>
+    <Color x:Key="Blanco">#FFFFFF</Color>
+    <Color x:Key="Negro">#000</Color>
+
+</ResourceDictionary>

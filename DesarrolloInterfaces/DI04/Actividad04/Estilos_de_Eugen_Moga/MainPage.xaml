@@ -1,0 +1,155 @@
+﻿<Page x:Class="Estilos_de_Eugen_Moga.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Estilos_de_Eugen_Moga"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+
+    <StackPanel>
+        <!-- H1 con Texto Boton mas Imagen  -->
+        <Border Background="#F1EEEA" >
+            <Grid>
+                <!-- Definicion de 2 columnas -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Columna izquierda -->
+                <StackPanel Grid.Column="0"
+                            VerticalAlignment="Top"
+                            Margin="40,40,10,40">
+
+                    <!-- H1 -->
+                    <TextBlock Text="Desarrollamos el Futuro Digital"
+                               HorizontalAlignment="Center"
+                               Style="{StaticResource H1Text}"/>
+
+                    <!-- Texto -->
+                    <TextBlock Text="En el grado superior de Desarrollo de aplicaciones multiplataforma, aprenderás a crear aplicaciones que funcionen en diversos sistemas operativos. Diseñarás interfaces de usuario intuitivas y atractivas."
+                               TextAlignment="Left"
+                               Margin="40"
+                               Style="{StaticResource SubtitleText}"/>
+
+                    <!-- Botón -->
+                    <Button Content="Contactar Ahora"
+                            HorizontalAlignment="Center"
+                            Style="{StaticResource PrimaryButton}"
+                            Click="Contactar_Click"/>
+
+                </StackPanel>
+
+                <!-- Columna Izquierda Imagen -->
+                <Border Grid.Column="1"
+                        CornerRadius="16"
+                        ClipToBounds="True"
+                        HorizontalAlignment="Right"
+                        Margin="0,40,40,40">
+
+                    <Image Source="/Images/escritorio.png"
+                           Width="539"
+                           Height="388"
+                           VerticalAlignment="Top" />
+                    
+                </Border>
+            </Grid>
+        </Border>
+
+        <!-- SECCION INFERIOR -->
+        <Border Background="White" Padding="40,20,40,40">
+
+            <StackPanel>
+
+                <TextBlock Text="¿Por Qué Elegirnos?"
+                           Style="{StaticResource H1Text}"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Center"
+                           Margin="10"/>
+
+                <TextBlock Text="Ofrecemos cursos de desarrollo de software de alta calidad con un enfoque centrado en resultados y satisfacción del usuario."
+                           Style="{StaticResource SubtitleText}"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Center"
+                           Margin="20"
+                           MaxWidth="800"/>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0"
+                                HorizontalAlignment="Center"
+                                Margin="20">
+
+                        <Image Source="/Images/rayo.png"
+                               Width="70"
+                               Height="70"/>
+
+                        <TextBlock Text="Rápido y Eficiente"
+                                   Style="{StaticResource ButtonText}"
+                                   HorizontalAlignment="Center"
+                                   Margin="0,10,0,5"/>
+
+                        <TextBlock Text="Aprendizaje rápido y eficiente adaptado a cada estudiante"
+                                   Style="{StaticResource BodyText}"
+                                   TextWrapping="Wrap"
+                                   TextAlignment="Center"
+                                   MaxWidth="250"/>
+
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1"
+                                HorizontalAlignment="Center"
+                                Margin="20">
+
+                        <Image Source="/Images/equipo.png"
+                               Width="70"
+                               Height="70"/>
+
+                        <TextBlock Text="Equipo Experto"
+                                   Style="{StaticResource ButtonText}"
+                                   HorizontalAlignment="Center"
+                                   Margin="0,10,0,5"/>
+
+                        <TextBlock Text="Profesorado con más de 10 años de experiencia en desarrollo de aplicaciones."
+                                   Style="{StaticResource BodyText}"
+                                   TextWrapping="Wrap"
+                                   TextAlignment="Center"
+                                   MaxWidth="250"/>
+
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2"
+                                HorizontalAlignment="Center"
+                                Margin="20">
+
+                        <Image Source="/Images/trabajo.png"
+                               Width="70"
+                               Height="70"/>
+
+                        <TextBlock Text="Trabajo Asegurado"
+                                   Style="{StaticResource ButtonText}"
+                                   HorizontalAlignment="Center"
+                                   Margin="0,10,0,5"/>
+
+                        <TextBlock Text="Tu éxito es nuestro compromiso. Formación de alto nivel con oportunidades laborales."
+                                   Style="{StaticResource BodyText}"
+                                   TextWrapping="Wrap"
+                                   TextAlignment="Center"
+                                   MaxWidth="250"/>
+
+                    </StackPanel>
+
+                </Grid>
+
+            </StackPanel>
+
+        </Border>
+    </StackPanel>
+</Page>

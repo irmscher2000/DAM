@@ -1,0 +1,111 @@
+﻿<Page x:Class="Estilos_de_Eugen_Moga.Sobre"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Estilos_de_Eugen_Moga"
+      mc:Ignorable="d" 
+      Title="Sobre">
+
+    <StackPanel>
+
+        <!-- SECCION SOBRE -->
+        <Border Background="#F1EEEA" Padding="30,30">
+
+            <StackPanel HorizontalAlignment="Center">
+
+                <TextBlock Text="Sobre DAM"
+                           Style="{StaticResource H1Text}"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Center"/>
+                <TextBlock Text="Desarrollo Aplicaciones Multiplataforma"
+                           Style="{StaticResource H1Text}"/>
+
+                <TextBlock Text="Somos una empresa líder en formación y desarrollo de software con más de 15 años de experiencia ayudando a alumnos y empresas a lograr sus objetivos."
+                           Style="{StaticResource SubtitleText}"
+                           HorizontalAlignment="Center"
+                           TextAlignment="Center"
+                           MaxWidth="900"
+                           Margin="0,20,0,0"/> 
+
+            </StackPanel>
+            
+        </Border>
+        
+        <!-- Historia -->
+        <Border Background="White" Padding="60,40">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0"
+                            VerticalAlignment="Center"
+                            Margin="0,0,40,0">
+                    <TextBlock Text="Nuestra Historia"
+                               Style="{StaticResource H2Text}"
+                               Margin="0,0,0,20"/>
+
+                    <TextBlock TextWrapping="Wrap" 
+                               MaxWidth="600"
+                               Style="{StaticResource BodyText}"
+                               HorizontalAlignment="Left"
+                               Margin="0,0,0,15"
+                               Text="DAM nació en 2010 con la visión de democratizar el acceso a la tecnología de calidad. Desde nuestros humildes comienzos como un pequeño equipo de desarrolladores apasionados, hemos crecido hasta convertirnos en un referente del sector de la formación."/>
+
+
+                    <TextBlock TextWrapping="Wrap"
+                               MaxWidth="600"
+                               Style="{StaticResource BodyText}"
+                               HorizontalAlignment="Left"
+                               Margin="0,0,0,15"
+                               Text="A lo largo de los años, hemos tenido el privilegio de formar  a más de 10000 alumnos, desde estudiantes particulares hasta grandes corporaciones, enseñando nuestros conocimientos."/>
+
+                    <TextBlock TextWrapping="Wrap"
+                               MaxWidth="600"
+                               Style="{StaticResource BodyText}"
+                               HorizontalAlignment="Left"
+                               Text="Hoy, nuestro equipo de más de 50 profesores continúa comprometido con la enseñanza, la innovación y la satisfacción del estudiante en cada curso que empezamos."/>
+
+                </StackPanel>
+
+                <Border Grid.Column="1"
+                        CornerRadius="16"
+                        ClipToBounds="True">
+
+                    <Image Source="/Images/historia.png"
+                           Width="540"
+                           Height="325"
+                           Stretch="UniformToFill"/>
+
+                </Border>
+                
+            </Grid>
+        </Border>
+        
+        <!-- Mision -->
+        <Border Background="White" Padding="60,20,60,40">
+
+            <StackPanel>
+                <TextBlock Text="Nuestra Misión"
+                           Style="{StaticResource H2Text}"
+                           Margin="0,0,0,15"/>
+
+                <TextBlock TextWrapping="Wrap"
+                           Style="{StaticResource BodyText}"
+                           Margin="0,0,0,10"
+                           Text="Empoderar a los alumnos mediante enseñanzas tecnológicas innovadoras y personalizadas que impulsen su crecimiento, mejoren su eficiencia operativa y les permitan destacar en la era digital."/>
+
+                <TextBlock TextWrapping="Wrap"
+                           Style="{StaticResource BodyText}"
+                           Margin="0,0,0,10"
+                           Text="Nos comprometemos a enseñar software de la más alta calidad, manteniendo una comunicación transparente y construyendo relaciones duraderas basadas en la confianza y los resultados tangibles."/>
+
+            </StackPanel>
+            
+        </Border>
+                
+
+    </StackPanel>
+</Page>
