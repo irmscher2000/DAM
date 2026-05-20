@@ -1,0 +1,104 @@
+﻿<Window x:Class="Actividad_4._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Actividad_4._2"
+        mc:Ignorable="d"
+        Title="Diseño de controles Eugen Moga" Height="700" Width="900"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanResize"
+        Background="LightGray">
+
+    <ScrollViewer 
+        HorizontalScrollBarVisibility="Auto"
+        VerticalScrollBarVisibility="Auto">
+
+        <Border Margin="20"
+                Padding="20"
+                Background="#F4F6F8"
+                BorderBrush="#2C3E50"
+                BorderThickness="2"
+                CornerRadius="12">
+
+            <!-- Ventana principal -->
+            <Grid Margin="10">
+
+                <!-- Titulo -->
+                <TextBlock Text="Diseño de controles"
+                           FontSize="32"
+                           FontWeight="Bold"
+                           Foreground="DarkBlue"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top"
+                           Margin="0,10,0,0" />
+
+                <!-- TextBox multilinea -->
+                <TextBox Name="TextBoxMultilinea"
+                         SpellCheck.IsEnabled="True" 
+                         AcceptsReturn="True"
+                         TextWrapping="Wrap"
+                         VerticalScrollBarVisibility="Auto"
+                         HorizontalScrollBarVisibility="Auto"
+                         Height="150"
+                         Width="750"
+                         Margin="0,80,0,0"
+                         VerticalAlignment="Top"/>
+
+                <!-- ComboBox con imagenes -->
+                <ComboBox Name="ComboBoxPersonajes"
+                          Height="40"
+                          Width="300"
+                          Margin="0,250,0,0"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Top">
+
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{Binding Imagen}" Width="40" Height="40" Margin="5,0,0,0"/>
+                                <TextBlock Text="{Binding Nombre}" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+
+                <!-- ListBox con modulos y barra de progreso -->
+                <ListBox Name="ListBoxModulos"
+                         Height="250"
+                         Width="750"
+                         Margin="0,320,0,0"
+                         VerticalAlignment="Top"
+                         HorizontalContentAlignment="Stretch">
+
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Margin="5" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="{Binding Nombre}" 
+                                           Width="200"
+                                           Foreground="{Binding Color}" 
+                                           VerticalAlignment="Center"
+                                           Margin="0,0,10,0"/>
+
+                                <ProgressBar Grid.Column="1" 
+                                             Value="{Binding Avance}"                                             
+                                             Height="20"/>
+
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+            </Grid>
+
+        </Border>
+        
+    </ScrollViewer>
+    
+    
+</Window>
