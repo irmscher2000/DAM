@@ -1,0 +1,27 @@
+<resources>
+    <!-- <string name="app_name">Light&amp;Dark</string> -->
+    <string name="app_name" translatable="false">Claro &amp; Oscuro</string>
+    <string name="field_mandatory">Este campo en obligatorio</string>
+    <string name="field_email">Email</string>
+    <string name="button_validate">Enviar</string>
+
+    <string name="toolbar_action_settings">Ajustes</string>
+
+    <string name="bottom_bar_share">Compartir</string>
+    <string name="bottom_bar_search">Buscar</string>
+
+    <string name="switch_notification">Enviar notificaciones</string>
+    <string name="fab_add">add</string>
+
+    <string name="settings_theme_key" translatable="false">theme</string>
+    <string name="settings_fragment_tab" translatable="false">settings_fragment_tab</string>
+    <string name="settings_theme_title">Seleccionar tema</string>
+    <string name="settings_theme_dialog_title">Seleccionar tema</string>
+    <string name="settings_toolbar">Ajustes</string>
+
+    <string name="settings_theme_value_default" translatable="false">Predeterminado</string>
+    <string name="settings_theme_value_light" translatable="false">Claro</string>
+    <string name="settings_theme_value_dark" translatable="false">Oscuro</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

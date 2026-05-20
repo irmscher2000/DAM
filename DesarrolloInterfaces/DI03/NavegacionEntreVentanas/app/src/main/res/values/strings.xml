@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NavegacionEntreVentanas</string>
+    <string name="modulo">DEIN</string>
+    <string name="nombre">Escribe tu nombre: </string>
+    <string name="aceptar">Boton Aceptar</string>
+    <string name="alumno">App creada por Eugen Moga</string>
+</resources>
