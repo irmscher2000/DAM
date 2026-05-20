@@ -1,0 +1,28 @@
+﻿<Window x:Class="GestionEmpleados2026.AgregarEmpleado"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionEmpleados2026"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Agregar Empleado" Height="300" Width="420">
+    
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="15">
+
+        <TextBlock Text="Nombre:" FontWeight="Medium" Margin="0,10,0,0"/>
+        <TextBox x:Name="Nombre" Width="370" Margin="0,5,0,0"/>
+
+        <TextBlock Text="Apellidos:" FontWeight="Medium" Margin="0,10,0,0"/>
+        <TextBox x:Name="Apellidos" Width="370" Margin="0,5,0,0"/>
+
+        <TextBlock Text="Es Usuario:" FontWeight="Medium" Margin="0,10,0,0"/>
+        <CheckBox x:Name="chkUsuario" Margin="0,5,0,0"/>
+
+        <TextBlock Text="Edad:" FontWeight="Medium" Margin="0,10,0,0"/>
+        <TextBox x:Name="Edad" Width="370" Margin="0,5,0,0"/>
+
+        <Button Content="Agregar Empleado" Margin="0,10,0,0"
+                Click="btnAgregarEmpleado_Click"/>
+    </StackPanel>
+</Window>

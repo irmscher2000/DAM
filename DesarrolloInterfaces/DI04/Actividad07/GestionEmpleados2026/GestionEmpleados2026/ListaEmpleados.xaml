@@ -1,0 +1,43 @@
+﻿<Window x:Class="GestionEmpleados2026.ListaEmpleados"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionEmpleados2026"
+        mc:Ignorable="d"
+        Title="Lista Empleados" Height="800" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Título -->
+        <TextBlock Grid.Row="0" 
+                   Text="Listado de empleados"
+                   FontSize="28"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,20,0,20"/>
+
+        <!-- DataGrid donde muestro los empleados -->
+        <DataGrid x:Name="dataGrid"
+                  Grid.Row="1"
+                  AutoGenerateColumns="True"
+                  IsReadOnly="True"
+                  Margin="0,0,0,20"
+                  HorizontalAlignment="Stretch"
+                  VerticalAlignment="Stretch"/>
+        
+        <!-- Boton para eliminar un registro -->
+        <Button Grid.Row="2"
+                Content="Eliminar Registro"
+                Width="150" Height="35"
+                HorizontalAlignment="Right"
+                Click="btnEliminarRegistro_Click"/>
+
+
+    </Grid>
+</Window>
