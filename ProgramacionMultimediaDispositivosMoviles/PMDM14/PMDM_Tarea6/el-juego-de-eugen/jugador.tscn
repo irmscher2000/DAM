@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://brfnqhx708dkf"]
+
+[ext_resource type="Script" uid="uid://cec5aul8l6e7t" path="res://jugador.gd" id="1_7st5j"]
+[ext_resource type="Texture2D" uid="uid://cvhafvfkvvqu6" path="res://art/manBrown_gun.png" id="2_ukil5"]
+[ext_resource type="AudioStream" uid="uid://ci0mba5nc7q3x" path="res://art/shoot.wav" id="3_8o684"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7st5j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ukil5")
+}],
+"loop": true,
+"name": &"caminar",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7st5j"]
+radius = 26.0
+height = 56.0
+
+[node name="Jugador" type="Area2D" unique_id=929349037]
+collision_mask = 2
+script = ExtResource("1_7st5j")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1978327330]
+sprite_frames = SubResource("SpriteFrames_7st5j")
+animation = &"caminar"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1393791267]
+shape = SubResource("CapsuleShape2D_7st5j")
+
+[node name="SpawnPoint" type="Node2D" parent="." unique_id=1013533271]
+position = Vector2(24, 9)
+
+[node name="Disparo" type="AudioStreamPlayer" parent="." unique_id=412304877]
+stream = ExtResource("3_8o684")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

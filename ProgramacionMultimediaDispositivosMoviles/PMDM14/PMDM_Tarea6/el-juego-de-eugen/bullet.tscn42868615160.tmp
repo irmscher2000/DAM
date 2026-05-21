@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dex3ll7db5vuh"]
+
+[ext_resource type="Texture2D" uid="uid://ct041t6kwiu4d" path="res://art/tile_507.png" id="1_v7oki"]
+[ext_resource type="Script" uid="uid://bgiilpryuc6wb" path="res://bullet.gd" id="1_v8qja"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v8qja"]
+size = Vector2(40, 8)
+
+[node name="Bullet" type="Area2D" unique_id=653256118]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_v8qja")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=512946928]
+shape = SubResource("RectangleShape2D_v8qja")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=2026590355]
+position = Vector2(1.4305115e-06, -2.9802322e-08)
+scale = Vector2(0.62500006, 0.21874999)
+texture = ExtResource("1_v7oki")
