@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HolaAndroid</string>
+    <string name="texto_principal">Bienvenido a Hola Android</string>
+    <string name="boton_texto">Boton</string>
+</resources>
