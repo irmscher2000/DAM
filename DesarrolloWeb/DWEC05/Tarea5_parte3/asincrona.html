@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+    <header>
+        <meta charset="UTF-8">
+    </header>
+    <body>
+        <button id="boton">Consultar nombres</button>
+        <div id="resultado"></div>
+
+        <script>
+            const salida = document.getElementById("resultado");
+            const boton = document.getElementById("boton");
+
+            document.getElementById("boton").addEventListener("click", function(){
+                fetch("sincrona.php").then(res=>res.text()).then(datos => {salida.innerHTML=datos;})
+            })
+        </script>
+    </body>
+</html>
