@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> Tarea 4 </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1> App gestión del alumnado </h1>
+        </header>
+            <section id="intro">
+                <h2>Instrucciones de uso</h2>
+                <p>Completa tus datos como alumno/a o como profesor/a. </p>
+                <p>En el área de consulta puedes conocer información sobre este curso como número de alumnos registrados, sus notas y sus medias. </p>
+            </section>
+
+            <section id="form">
+                <h2>Formulario</h2>
+                <form id="form-general">
+                    <label for="nombre">Nombre:</label> 
+                    <input type="text" id="nombre"/><br><br>
+
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad"/><br><br>
+
+                    <label for="cargo">Cargo:</label>
+                        <select id="cargo">
+                            <option value="1">Estudiante</option>
+                            <option value="2">Profesor/a</option>    
+                        </select>             
+                    <br><br>
+                    
+                    <!--Si selecciona profesor/a se oculta esta parte de formulario-->
+                    <div id="bloque-notas">
+                    <h3>Notas de las asignaturas</h3>
+
+                    <label for="nota-mat">Nota Matemáticas:</label><br>
+                    <input type="number" id="nota-mat"><br><br>
+
+                    <label for="nota-len">Nota Lengua:</label><br>
+                    <input type="number" id="nota-len"><br><br>
+
+                    <label for="nota-his">Nota Historia:</label><br>
+                    <input type="number" id="nota-his"><br><br>
+                    </div>
+
+                    <button id="boton" type="submit">Enviar</button>
+                </form>
+
+            </section>
+
+            <section id="consulta">
+                <h2>Consulta</h2>
+                    <button id="boton2" onclick="mostrarAlumnos(nombres, edades)">Consultar alumnos registrados</button>
+                    <button id="boton3" onclick="mostrarNotas(nombres, notas)">Mostrar las notas de los alumnos</button>
+                    <button id="boton4" onclick="calcularMediaAlumno(nombres, notas)">Calcular media de los alumnos</button>
+                    <button id="boton5" onclick="mejorAlumno(nombres, notas)">Mostrar el alumno con la media más alta</button><br><br>
+
+                
+                    <textarea id="resultado" placeholder="Resultado de la consulta"></textarea>
+                
+
+            </section>
+
+
+        <script src="app.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,82 @@
+/* 
+    Document   : style.css
+    Created on : 11-november-2025
+    Author     : Rebeca
+*/
+
+
+* {
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+
+header {
+    background-color: #abe1e2;
+    padding: 10px 10px 30px 10px;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #737a7c;
+}
+
+#intro{
+    background-color: #6cc0d1;
+   padding: 20px;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+#form {
+    background-color: #e5e5e5;
+    width: 47%;
+    margin: 10px 0px 0px 30px;
+    height: 520px;
+    text-align: center;
+    float: left;
+}
+
+#consulta {
+    background-color: #e5e5e5;
+    width: 47%;
+    margin: 10px 30px 0px 0px;
+    height: 520px;
+    text-align: center;
+    float: right;
+}
+
+#boton {
+width: 100px;
+height: 50px;
+background-color: #6cc0d1;
+border-radius: 10%;
+}
+
+#boton2, #boton3, #boton4, #boton5 {
+width: 170px;
+height: 70px;
+background-color: #6cc0d1;
+border-radius: 10%;
+}
+
+#resultado {
+    width: 700px;
+    height: 150px;
+    border-radius: 10%;
+    resize: none; /*evita que el usuario lo redimensione*/
+    border: 2px solid #737a7c;
+    text-align: center;
+}
