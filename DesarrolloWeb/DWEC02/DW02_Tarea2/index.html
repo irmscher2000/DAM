@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- Eugen Moga 
+     DWEC02 Tarea
+-->
+
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <title>DWEC Tarea 2</title>
+        <link rel="stylesheet" href="estilo.css">
+        
+    </head>
+    <body >
+
+        <h1 id="cabecera">Formulario de acceso</h1>
+
+        <form id="frm-persona" >
+            <h2>Introduce los siguientes campos</h2>
+
+            <label>Nombre</label>
+            <input type="text" id="in-nombre">
+
+            <label>Apellido</label>
+            <input type="text" id="in-apellido">
+
+            <label>Localidad</label>
+            <input type="text" id="in-localidad">
+
+            <button id="boton" type="submit">Enviar</button>
+            <div id="out-datos"></div>
+        </form>
+
+        <h1 id="cabecera">Calculo de números primos</h1>
+
+        <div id="primos">
+            <h2>Elige un número para calcular todos sus primos</h2>
+
+            <label for="in-n">Numero: </label>
+            <input type="number" id="in-n">
+
+            <div><button id="boton2" type="submit">Enviar</button> </div>
+            
+            <div id="out-for"></div>
+            <div id="out-while"></div>
+            <div id="out-dowhile"></div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+/* 
+    Document   : estilo.css
+    Created on : 21-september-2025
+    Author     : Rebeca
+    Agrego     : border-top: 10px solid cadetblue y border-bottom: 10px solid cadetblue en #frm-persona, #primos
+    Modificado : 31- octubre-2025
+    Author     : Eugen
+                 
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    margin: 10px;
+}
+
+h1 {
+    margin: 10px;
+    padding: 20px;
+    color: navy;
+}
+
+h2, h3 {
+    margin: 7px;
+    padding: 10px;
+    color: rgb(0, 73, 128);
+}
+
+
+#cabecera {
+    margin-bottom: 50px;
+    background-color: slategrey;
+    border-radius: 12px;
+    margin:0 auto;
+    min-height: 40px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#numeros {
+    margin-bottom: 50px;
+    background-color: slategrey;
+    border-radius: 12px;
+    margin:0 auto;
+    min-height: 40px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#boton,#boton2  {
+  display:inline-block;     
+  margin:0 0 0 8px;         
+  padding:8px;
+  border:1px solid #345;
+  background:#456; color:#fff;
+  border-radius:4px; cursor:pointer;
+  vertical-align:middle;
+}
+
+
+#frm-persona, #primos {
+    width: 900px;
+    background-color: bisque;
+    margin: auto;
+    padding: 15px;
+    border-top: 10px solid cadetblue;
+    border-bottom: 10px solid cadetblue;
+
+}
+
+#out-datos, #out-for, #out-while, #out-dowhile {
+  background: #fff;
+  border: 1px solid #cdd;
+  border-radius: 6px;
+  padding: 12px;
+  margin: 12px;
+  width: 500px;
+  min-height: 32px;
+}
