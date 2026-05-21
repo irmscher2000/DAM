@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:drawable="@color/gris_fondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/repaso_examen"
+            android:textAlignment="center"
+            android:textColor="@color/negro_texto"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/portada"
+            app:layout_constraintDimensionRatio="H,16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titulo"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="¡Bienvenido al examen de conocimientos generales! Presiona 'Comenzar' para iniciar. o Presiona ´Instrucciones para ver los detalles el examen"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <TextView
+            android:id="@+id/nombreUsuario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="NOMBRE USUARIO"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texto"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <!-- CAMPO NOMBRE -->
+        <EditText
+            android:id="@+id/campoNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/borde_edittext"
+            android:hint="Nombre"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nombreUsuario"
+            app:layout_constraintWidth_percent="0.9" />
+
+
+        <TextView
+            android:id="@+id/Contraseña"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="CONTRASEÑA"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/campoNombre"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <EditText
+            android:id="@+id/campoContraseña"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/borde_edittext"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Contraseña"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/comenzar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Comenzar"
+            android:textAllCaps="false"
+            android:background="@drawable/boton_selector"
+            android:textColor="@color/negro_texto"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/instrucciones"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/campoContraseña"
+            app:layout_constraintWidth_percent="0.38" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/instrucciones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Instrucciones"
+            android:textAllCaps="false"
+            android:background="@drawable/boton_selector"
+            android:textColor="@color/negro_texto"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/comenzar"
+            app:layout_constraintTop_toTopOf="@id/comenzar"
+            app:layout_constraintWidth_percent="0.38" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchModo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:checked="false"
+            android:text="Modo Práctica"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/comenzar"
+            app:thumbTint="@color/white"
+            app:trackTint="@color/switch_track_selector" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

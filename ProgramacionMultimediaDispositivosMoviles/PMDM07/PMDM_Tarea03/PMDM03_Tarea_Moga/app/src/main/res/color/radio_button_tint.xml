@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Cambia el color del radio button segun el estado -->
+    <item android:color="@color/azul_principal" android:state_checked="true"/> <!-- Azul cuando seleccionado -->
+    <item android:color="@color/gris" android:state_checked="false"/>  <!-- Gris cuando no seleccionado -->
+
+</selector>

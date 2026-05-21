@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="azul_principal">#007BFF</color>
+    <color name="azul_oscuro">#0056D2</color>
+    <color name="rojo_boton">#D90000</color>
+    <color name="verde_boton">#16D800</color>
+    <color name="verde_fondo">#152F15</color>
+    <color name="negro_texto">#212121</color>
+    <color name="amarillo">#FFFB27</color>
+    <color name="amarillo_fondo">#2B2A05</color>
+    <color name="gris_fondo">#F7F9FC</color>
+    <color name="rojo_fondo">#FF6B6B</color>
+    <color name="gris">#CCCCCC</color>
+</resources>

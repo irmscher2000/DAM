@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/preguntas"
+    android:background="@color/gris_fondo">
+
+    <!-- TÍTULO -->
+    <TextView
+        android:id="@+id/titulo_examen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Resultados del examen"
+        android:textAlignment="center"
+        android:textColor="@color/negro_texto"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TARJETA RESULTADO -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardResultado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo_examen">
+
+        <LinearLayout
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- TEXTO NOTA -->
+            <TextView
+                android:id="@+id/texto_puntuacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Tu puntuación: "
+                android:textAlignment="center"
+                android:textColor="@color/gris"
+                android:textSize="22dp" />
+
+            <!-- MENSAJE -->
+            <TextView
+                android:id="@+id/texto_mensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/roboto"
+                android:text="¡Buen trabajo! Revisa las preguntas para mejorar en los temas que fallaste."
+                android:textColor="@color/gris"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonBD"
+        style="@style/BotónPrincipal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Ver Historial"
+        app:layout_constraintBottom_toTopOf="@+id/finalizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardResultado" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/revisar"
+        style="@style/BotónPrincipal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Revisar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/volver"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardResultado"
+        app:layout_constraintVertical_bias="0.911"
+        app:layout_constraintWidth_percent="0.28" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/volver"
+        style="@style/BotónPrincipal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@id/finalizar"
+        app:layout_constraintTop_toBottomOf="@id/cardResultado"
+        app:layout_constraintVertical_bias="0.911"
+        app:layout_constraintWidth_percent="0.28" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/finalizar"
+        style="@style/BotónPrincipal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Finalizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/volver"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@id/revisar"
+        app:layout_constraintTop_toBottomOf="@id/cardResultado"
+        app:layout_constraintVertical_bias="0.911"
+        app:layout_constraintWidth_percent="0.28" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

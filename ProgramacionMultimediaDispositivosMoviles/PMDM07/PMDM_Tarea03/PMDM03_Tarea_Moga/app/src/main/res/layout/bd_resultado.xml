@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/volver"
+            style="@style/BotónPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/botonInsertar"
+            style="@style/BotónPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insertar"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/botonBorrar"
+            style="@style/BotónPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/campoNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonConsultar"
+        style="@style/BotónPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consultar por Nombre"
+        android:layout_gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonListarTodo"
+        style="@style/BotónPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listar Todo"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historial de Resultados"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <ListView
+        android:id="@+id/listaResultados"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#E8F5E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detalles del Resultado"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textColor="#333333" />
+
+        <!-- Información básica -->
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre: "
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tvNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota: "
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tvModo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modo: "
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha: "
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- "Chorradas" -->
+        <TextView
+            android:id="@+id/tvPorcentaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Porcentaje: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tvIntentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intentos: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/botonVolver"
+            style="@style/BotónPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver al Historial"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
