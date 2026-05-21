@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">moga_eugen_PMDM_Tarea4</string>
+    <string name="descripcion_anchoas">Anchoas ahumadas del Cantábrico. Un manjar de las costas del norte que acabamos con un toque de aceite de oliva virgen extra y cebolleta.</string>
+    <string name="descripcion_chipirones">Chipirones de anzuelo a la plancha acompañados por cebolleta tierna y pimiento verde.</string>
+    <string name="descripcion_solomillo">Steak tartar a base de solomillo de angus, un sabor y una jugosidad inigualables. Un plato hecho a partir de producto de origen 100% navarro.Este es uno de nuestros platos más célebres.</string>
+    <string name="titulo">Pintxos en Pamplona</string>
+    <string name="la_olla">La Olla Restaurante</string>
+    <string name="bar_gaucho">Bar Gaucho</string>
+    <string name="iruñazarra">Iruñazarra</string>
+    <string name="boton_camara">Cámara</string>
+    <string name="boton_ubicacion">Ubicación</string>
+    <string name="boton_tiempo">Tiempo</string>
+    <string name="titulo_tiempo">Tiempo en Pamplona</string>
+    <string name="temperatura">Temperatura: </string>
+    <string name="descripcion_tiempo">Desciprión: </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
