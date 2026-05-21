@@ -1,0 +1,17 @@
+# Godot 4+
+.godot/
+
+# Imported translations
+*.translation
+
+# Mono
+.mono/
+data_*/
+
+# Exported builds
+export/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
