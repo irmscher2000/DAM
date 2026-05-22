@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- Vista de lista -->
+    <record model="ir.ui.view" id="vehiculos_list">
+      <field name="name">vehiculos list</field>
+      <field name="model">x_vehiculos.vehiculos</field> 
+      <field name="arch" type="xml">
+        <list>
+          <field name="marca"/>
+          <field name="modelo"/>
+          <field name="anio_fabricacion"/>
+          <field name="matricula"/>
+        </list>
+      </field>
+    </record>
+
+    <!-- Vista formulario -->
+    <record model="ir.ui.view" id="vehiculos_form">
+      <field name="name">vehiculos form</field>
+      <field name="model">x_vehiculos.vehiculos</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <field name="marca"/>
+              <field name="modelo"/>
+              <field name="anio_fabricacion"/>
+              <field name="matricula"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- Acción -->
+    <record model="ir.actions.act_window" id="vehiculos_action_window">
+      <field name="name">Vehículos</field>
+      <field name="res_model">x_vehiculos.vehiculos</field>  
+      <field name="view_mode">list,form</field>  
+    </record>
+
+    <!-- Menú principal -->
+    <menuitem name="VEHICULOS" id="vehiculos_menu_root" sequence="10"/>
+
+    <!-- Menu categorias -->
+     <menuitem name="Menú 1" id="vehiculos_menu_1" parent="vehiculos_menu_root" />
+
+    <!-- Submenú que enlaza a la acción -->
+    <menuitem name="Lista de Vehículos" id="vehiculos_menu_list" 
+              parent="vehiculos_menu_1"
+              action="vehiculos_action_window" sequence="10"/>
+
+    
+    
+  </data>
+</odoo>

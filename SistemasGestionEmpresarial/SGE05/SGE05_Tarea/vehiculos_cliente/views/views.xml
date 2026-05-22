@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="vehiculos_cliente_list">
+      <field name="name">vehiculos_cliente list</field>
+      <field name="model">x_vehiculos.cliente</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="dni"/>
+          <field name="nombre"/>
+          <field name="telefono"/>
+        </list>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="vehiculos_cliente_action_window">
+      <field name="name">Clientes</field>
+      <field name="res_model">x_vehiculos.cliente</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem name="Clientes" id="menu_vehiculos_cliente_root"
+              parent="vehiculos.vehiculos_menu_root"
+              action="vehiculos_cliente_action_window"/>
+      
+    <!-- Extension vista formulario -->
+    <record id="vehiculos_form_inherit" model="ir.ui.view">
+      <field name="name">vehiculos.form.inherit</field>
+      <field name="model">x_vehiculos.vehiculos</field>
+      <field name="inherit_id" ref="vehiculos.vehiculos_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//group" position="inside">
+          <field name="cliente_id"/>
+        </xpath>
+      </field>
+    </record>
+
+    <!-- Extension vista lista -->
+    <record id="vehiculos_list_inherit" model="ir.ui.view">
+      <field name="name">vehiculos.list.inherit</field>
+      <field name="model">x_vehiculos.vehiculos</field>
+      <field name="inherit_id" ref="vehiculos.vehiculos_list"/>
+      <field name="arch" type="xml">
+        <xpath expr="//list" position="inside">
+          <field name="cliente_id"/>
+        </xpath>
+      </field>
+    </record>
+
+  </data>
+</odoo>
